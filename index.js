@@ -14,6 +14,13 @@ function loadPage(page) {
     // Check which page is clicked and load corresponding content
     if (page === "page1") {
         content.innerHTML = `
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOI PLUS</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
   <div id="main-content">
     <div class="app-bar">
       <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
@@ -76,8 +83,9 @@ function loadPage(page) {
           </div>
       </div>
       </div>
-    <script src="main_text.js"></script>
+    <script src="index.js"></script>
   </div>
+</body>
         `;
     } else if (page === "page2") {
         content.innerHTML = `
