@@ -14,6 +14,8 @@ function loadPage(page) {
     // Check which page is clicked and load corresponding content
     if (page === "page1") {
         content.innerHTML = `
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,11 +86,19 @@ function loadPage(page) {
       </div>
       </div>
     <script src="index.js"></script>
+    <script src="script.js"></script>
   </div>
 </body>
+</html>
         `;
     } else if (page === "page2") {
         content.innerHTML = `
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>KOI PLUS</title>
+            <link rel="stylesheet" href="index.css">
+        </head>
             <div id="main-content">
                 <div class="app-bar">
                     <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
@@ -120,6 +130,12 @@ function loadPage(page) {
         `;
     } else if (page === "page3") {
         content.innerHTML = `
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>KOI PLUS</title>
+            <link rel="stylesheet" href="index.css">
+        </head>
             <div id="main-content">
                 <div class="app-bar">
                     <span class="menu-icon" onclick="toggleSidebar()">&#9776;</span>
