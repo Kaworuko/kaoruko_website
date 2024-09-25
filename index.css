@@ -1,0 +1,327 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* App Bar Container */
+.app-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ubah justify-content untuk menyebar elemen */
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    width: 90%;
+    max-width: 600px; /* Batasi lebar maksimal */
+    margin: 20px auto; /* Tengah di layar besar dan kecil */
+    transition: all 0.3s ease;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Weather Logo */
+.weather-logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+/* App Title */
+.app-title {
+    font-size: 20px;
+    color: #333;
+    flex-grow: 1; /* Memastikan teks menggunakan ruang tersisa */
+    display: flex; /* Flex untuk teks rata */
+    justify-content: center; /* Bawa teks ke sebelah kanan */
+    margin-top: 4px;
+    margin-right: 85px;
+    white-space: nowrap; /* Mencegah teks terpotong */
+}
+
+.app-title strong {
+    font-weight: 600;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #b6b9f1, #8f8f8f); /* Gradient background */
+    transition: width 0.4s ease;
+    overflow-x: hidden;
+    padding-top: 60px;
+    z-index: 1000;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent hover effect */
+}
+
+.sidebar a i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Close button */
+.sidebar .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 36px;
+    color: #f1f1f1;
+}
+
+/* Sidebar content area */
+.sidebar-content {
+    padding-left: 15px;
+}  
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.cards-container2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.cards-container3 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    gap: 20px;
+}
+
+/* Individual Card */
+.card {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 45%; /* Each card takes up 45% of the container */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card2 {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 50%; /* Each card takes up 45% of the container */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card3 {
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    width: 80%; /* Each card takes up 45% of the container */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card2:hover {
+    transform: scale(1.05);
+}
+
+/* Card Content */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.data-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2b6cb0; /* Default color */
+}
+
+.data-number .unit {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.data-number2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2b6cb0; /* Default color */
+}
+
+.data-number2 .unit2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.data-number3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000; /* Default color */
+}
+
+
+.icon {
+    width: 40px;
+    margin: 10px 0;
+}
+
+.icon2 {
+    width: 40px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Custom Colors for Each Card */
+.card:nth-child(1) .data-number {
+    color: #2b6cb0; /* Turbidity */
+}
+
+.card:nth-child(2) .data-number {
+    color: #38a169; /* DO */
+}
+
+.card2:nth-child(1) .data-number2 {
+    color: #ffb937; /* Vout Pump */
+}
+
+.card2:nth-child(2) .data-number2 {
+    color: #0066ff; /* Water Flow */
+}
+
+.card:nth-child(2) .icon {
+    filter: hue-rotate(90deg); /* Adjust icon color */
+}
+
+.card2:nth-child(2) .icon {
+    filter: hue-rotate(90deg); /* Adjust icon color */
+}
+
+.text {
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 16px;
+}
+
+.text2 {
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .app-bar {
+        padding: 10px;
+        justify-content: space-between; /* Elemen menyebar pada ukuran kecil */
+    }
+
+    .app-title {
+        font-size: 19px;
+    }
+
+    .menu-icon {
+        font-size: 23px;
+    }
+
+    .weather-logo img {
+        width: 25px;
+        height: 25px;
+    }
+    .cards-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cards-container2 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+/* Untuk layar yang sangat kecil */
+@media (max-width: 400px) {
+    .app-bar {
+        padding: 8px;
+        justify-content: space-between;
+    }
+
+    .menu-icon {
+        font-size: 20px;
+    }
+
+    .weather-logo img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .app-title {
+        font-size: 16px;
+        justify-content: flex-end;
+    }
+}
